@@ -2,12 +2,21 @@
 .nav-bar {
     background: rgba(255,137,0,1);
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    width: 100%;
+    top: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.nav-logo {
+    height: 80px;
 }
 
 
-
-
 body {
+    margin-top: 80px;
     font-family: Georgia, serif;
     font-weight: normal;
     color: #333;
@@ -15,19 +24,8 @@ body {
     background: #fff;
   }
   
-  .btn {
-    background: #829aa8;
-    border: solid 1px #829aa8;
-    color: #fff;
-    padding: 10px;
-    text-decoration: none;
-    border-radius: 5%;
-  }
-  .btn:hover {
-    background: #e8e8e8;
-    color: #829aa8;
-  }
-  
+
+
   .grid {
     max-width: 800px;
     margin: 45px auto;
