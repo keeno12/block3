@@ -26,15 +26,44 @@
     height: 80px;
 }
 
-
-
-  
-
 .landing-img {
-  background-image: url(../img/3rdfloor.jpg);
-  height: 500px;
+    background: 
+    linear-gradient(
+        rgba(0, 0, 0, 0.45), 
+        rgba(0, 0, 0, 0.45)
+    ), url(../img/3rdfloor.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 600px;
   width: 100%;
+  color: #fff;
   }
+
+
+
+.landing-words {
+    padding: 60px 60px 20px 60px;
+    font-size: 60px;
+}  
+
+.landing-tagline{
+    padding: 0px 60px 60px 60px;
+}
+
+.cta-btn {
+    background: rgba(255,137,0,1);
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    display: block;
+    width: 200px;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
   .grid {
     max-width: 800px;
@@ -46,6 +75,16 @@
     padding: 20px;
 }
 
+#member-grid {
+    grid-gap: 20px;
+    
+}
+
+#amenities-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 300px;
+}
+
 .project {
     text-align: center;
     color: #fff;
@@ -55,3 +94,52 @@
     box-shadow: 3px 3px 5px #888888;
     text-decoration: none;
 }
+
+/* Ribbon CSS */
+.box {
+    position: relative;
+  }
+
+.ribbon {
+    position: absolute;
+    right: -5px; top: -5px;
+    z-index: 1;
+    overflow: hidden;
+    width: 75px; height: 75px;
+    text-align: right;
+  }
+  .ribbon span {
+    font-size: 10px;
+    font-weight: bold;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 20px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    width: 100px;
+    display: block;
+    background: #79A70A;
+    background: linear-gradient(#9BC90D 0%, #79A70A 100%);
+    box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 19px; right: -21px;
+  }
+  .ribbon span::before {
+    content: "";
+    position: absolute; left: 0px; top: 100%;
+    z-index: -1;
+    border-left: 3px solid #79A70A;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #79A70A;
+  }
+  .ribbon span::after {
+    content: "";
+    position: absolute; right: 0px; top: 100%;
+    z-index: -1;
+    border-left: 3px solid transparent;
+    border-right: 3px solid #79A70A;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #79A70A;
+  }
