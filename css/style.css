@@ -1,3 +1,15 @@
+* {
+    margin: 0px;
+  }
+
+  body {
+    margin-top: 80px;
+    font-family: Georgia, serif;
+    font-weight: normal;
+    color: #333;
+    font-size: 1.75em;
+    background: #fff;
+  }
 
 .nav-bar {
     background: rgba(255,137,0,1);
@@ -15,16 +27,14 @@
 }
 
 
-body {
-    margin-top: 80px;
-    font-family: Georgia, serif;
-    font-weight: normal;
-    color: #333;
-    font-size: 1.75em;
-    background: #fff;
-  }
+
   
 
+.landing-img {
+  background-image: url(../img/3rdfloor.jpg);
+  height: 500px;
+  width: 100%;
+  }
 
   .grid {
     max-width: 800px;
