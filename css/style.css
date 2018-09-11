@@ -38,7 +38,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  height: 600px;
+  height: 700px;
   width: 100%;
   color: #fff;
   }
@@ -46,7 +46,7 @@
 
 
 .landing-words {
-    padding: 60px 60px 20px 60px;
+    padding: 150px 60px 20px 60px;
     font-size: 60px;
     text-align: center;
 }  
@@ -81,6 +81,7 @@ p {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 20px;
 }
 
 .truebase-img {
@@ -103,10 +104,9 @@ p {
 #member-grid {
     grid-gap: 20px;
     grid-auto-rows: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     
 }
-
-
 
 #amenities-grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -124,6 +124,11 @@ background: rgba(155,155,155,1);
     border-radius: 0.3em;
     box-shadow: 3px 3px 5px #888888;
     text-decoration: none;
+}
+
+
+#members-section {
+    text-align: center;
 }
 
 /* Ribbon CSS */
@@ -150,8 +155,8 @@ background: rgba(155,155,155,1);
     -webkit-transform: rotate(45deg);
     width: 100px;
     display: block;
-    background: #79A70A;
-    background: linear-gradient(#9BC90D 0%, #79A70A 100%);
+    background: rgba(255,137,0,1);
+    background: linear-gradient(rgba(255,137,0,1) 0%, rgba(255,137,0,1)100%);
     box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
     position: absolute;
     top: 19px; right: -21px;
@@ -160,19 +165,19 @@ background: rgba(155,155,155,1);
     content: "";
     position: absolute; left: 0px; top: 100%;
     z-index: -1;
-    border-left: 3px solid #79A70A;
+    border-left: 3px solid rgba(255,137,0,1);
     border-right: 3px solid transparent;
     border-bottom: 3px solid transparent;
-    border-top: 3px solid #79A70A;
+    border-top: 3px solid rgba(255,137,0,1);
   }
   .ribbon span::after {
     content: "";
     position: absolute; right: 0px; top: 100%;
     z-index: -1;
     border-left: 3px solid transparent;
-    border-right: 3px solid #79A70A;
+    border-right: 3px solid rgba(255,137,0,1);
     border-bottom: 3px solid transparent;
-    border-top: 3px solid #79A70A;
+    border-top: 3px solid rgba(255,137,0,1);
   }
 
 
@@ -187,6 +192,7 @@ background: rgba(155,155,155,1);
   .option-title {
       font-weight: bold;
       margin-bottom: 20px;
+
   }
 
   #sponsor-section {
