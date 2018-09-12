@@ -225,7 +225,7 @@ background: rgb(233, 233, 233);
 
     #pioneer {
     background: rgba(0,59,77,1);
-    height: 100px;
+    min-height: 100px;
     color: rgba(255,137,0,1);
     text-align: center;
     line-height: 100px;
