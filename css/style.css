@@ -184,6 +184,7 @@ background: rgb(233, 233, 233);
     position: absolute;
     top: 19px; right: -21px;
   }
+  
   .ribbon span::before {
     content: "";
     position: absolute; left: 0px; top: 100%;
