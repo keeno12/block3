@@ -134,6 +134,10 @@ background: rgb(233, 233, 233);
 }
 
 
+
+
+/* Memberships */
+
 .project {
     text-align: center;
     color: #000;
@@ -148,11 +152,22 @@ background: rgb(233, 233, 233);
     box-shadow: 5px 5px 20px #888888;
 }
 
-
 #members-section {
     text-align: center;
 }
 
+#seat-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 300px;
+}
+
+.membership-photo{
+    display: block;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
 
 /* Ribbon CSS */
 .box {
